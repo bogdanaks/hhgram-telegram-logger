@@ -40,8 +40,7 @@ class TelegramController:
             logger.info(f"Sending message to Telegram: {message}")
             emoji_type = self._get_emoji_by_type(level.lower())
             formatted_message = (
-                f"**{emoji_type} {level.upper()}**\n"
-                f"**Time:** {time}\n"
+                f"**{emoji_type} {level.upper()}** | {time}\n"
                 f"**Logger:** {name}\n\n"
                 f"**Message:** {message}\n"
             )
