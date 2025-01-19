@@ -34,7 +34,6 @@ class TelegramController:
         try:
             data = json.loads(content)
             level: str = data["level"]
-            name: str = data["name"]
             message: str = data["message"]
             time: str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             logger.info(f"Sending message to Telegram: {message}")
