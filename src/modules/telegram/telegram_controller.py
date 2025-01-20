@@ -54,7 +54,9 @@ class TelegramController:
             logger.error(f"Error sending message to Telegram: {e}")
 
     def _get_emoji_by_type(self, type: str):
-        if type == "info":
+        if type == "debug":
+            return "✔️"
+        elif type == "info":
             return "ℹ️"
         elif type == "warning":
             return "⚠️"
