@@ -9,7 +9,7 @@ pipeline {
         stage('Prepare') {
             steps {
                 sh 'cp /opt/hhgram/telegram-logger/.env /var/lib/jenkins/workspace/hhgram-telegram-logger/'
-                sh 'cp /opt/hhgram/telegram-logger/1002359715140.session /var/lib/jenkins/workspace/hhgram-telegram-logger/'
+                sh 'cp /opt/hhgram/telegram-logger/14699817759.session /var/lib/jenkins/workspace/hhgram-telegram-logger/'
             }
         }
         stage('Run docker-compose') {
